@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import App from './App';
+import Form from './View';
 
 export default class Login extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ export default class Login extends Component {
   }
 
   handleSubmit(event) {
-    
+
   }
 
   render() {
@@ -47,7 +47,7 @@ export default class Login extends Component {
             required
           />
 
-          <button type="submit">Login</button>
+          <button type="submit" >Login</button>
         </form>
       </div>
     );
