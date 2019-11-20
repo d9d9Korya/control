@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import axios from "axios";
 import App from './App';
 
 export default class Login extends Component {
@@ -23,31 +22,7 @@ export default class Login extends Component {
   }
 
   handleSubmit(event) {
-    const { email, password } = this.state;
-  //  <a href="javascript : goToPage();"> ReactDOM.render(<App />, document.getElementById('root'));</a>
-  
-    /*
-    axios
-      .post(
-        
-        {
-          user: {
-            email: email,
-            password: password
-          }
-        },
-        { withCredentials: true }
-      )
-      .then(response => {
-        if (response.data.logged_in) {
-          this.props.handleSuccessfulAuth(response.data);
-        }
-      })
-      .catch(error => {
-        console.log("login error", error);
-      });
-    event.preventDefault();
-    */
+    
   }
 
   render() {
