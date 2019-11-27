@@ -4,6 +4,7 @@ import Router from './index';
 import { Switch, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { browserHistory }  from 'react-router';
+import { Link } from 'react-router-dom'
 import './index.css';
 
 
@@ -34,6 +35,8 @@ export default class Login extends Component {
   render() {
     return (
       <class loginForm>
+        
+         <Link to="/view" >View</Link>
         <p1 class="header">Login</p1>
         <form onSubmit={this.handleSubmit}>
        

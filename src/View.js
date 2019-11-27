@@ -29,11 +29,11 @@ class View extends Component {
     render() {
         const { characters } = this.state;
 
-     //   <li><Link to='/'>Login</Link></li>
 
         return (
             <div className="container">
-                <Table
+                 <Link to="/" >Login</Link>
+                            <Table
                     characterData={characters}
                     removeCharacter={this.removeCharacter}
                 />
