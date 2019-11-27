@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import View from './View';
+import Router from './index';
 import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import { browserHistory }  from 'react-router';
+import './index.css';
 
 
 export default class Login extends Component {
@@ -24,14 +28,16 @@ export default class Login extends Component {
   }
 
   handleSubmit(event) {
-
+  
   }
 
   render() {
     return (
-      <div>
+      <class loginForm>
+        <p1 class="header">Login</p1>
         <form onSubmit={this.handleSubmit}>
-          <input
+       
+          <input class="inputs"
             type="email"
             name="email"
             placeholder="Email"
@@ -40,7 +46,7 @@ export default class Login extends Component {
             required
           />
 
-          <input
+          <input class="inputs"
             type="password"
             name="password"
             placeholder="Password"
@@ -48,10 +54,10 @@ export default class Login extends Component {
             onChange={this.handleChange}
             required
           />
-
-          <button type="submit" >Login</button>
+      
+          <button type="submit" class="Btn">Login</button>
         </form>
-      </div>
+      </class>
     );
   }
 }

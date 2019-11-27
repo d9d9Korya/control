@@ -33,25 +33,25 @@ class Form extends Component {
 
         return (
             <form onSubmit={this.onFormSubmit}>
-                <label>Firstname</label>
-                <input 
+                <label class="labels" >Firstname</label>
+                <input class="inputs"
                     type="text" 
                     name="firstname" 
                     value={firstname} 
                     onChange={this.handleChange} />
-                <label>Lastname</label>
-                <input 
+                <label class="labels">Lastname</label>
+                <input class="inputs"
                     type="text" 
                     name="lastname" 
                     value={lastname} 
                     onChange={this.handleChange} />
-                <label>Email</label>    
-                <input 
+                <label class="labels">Email</label>    
+                <input class="inputs"
                     type="text" 
                     name="mail" 
                     value={mail} 
                     onChange={this.handleChange} />
-                <button type="submit">
+                <button class="Btn" type="submit">
                     Submit
                 </button>
             </form>

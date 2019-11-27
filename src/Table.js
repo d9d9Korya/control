@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import './index.css';
 
 const TableHeader = () => { 
     return (
         <thead>
+
             <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-                <th>Remove</th>
+                <th class="labels">Firstname</th>
+                <th class="labels">Lastname</th>
+                <th class="labels">Email</th>
+                <th class="labels">Remove</th>
             </tr>
+
         </thead>
     );
 }

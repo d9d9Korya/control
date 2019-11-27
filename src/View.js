@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Table from './Table';
 import Form from './Form';
+import './index.css';
+import { Link } from 'react-router-dom'
+
 
 class View extends Component {
     state = {
@@ -25,7 +28,9 @@ class View extends Component {
 
     render() {
         const { characters } = this.state;
-        
+
+     //   <li><Link to='/'>Login</Link></li>
+
         return (
             <div className="container">
                 <Table
@@ -37,6 +42,7 @@ class View extends Component {
             </div>
         );
     }
+
 }
 
 export default View;
