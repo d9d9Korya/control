@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import Form from './View';
+import View from './View';
+import { Switch, Route } from 'react-router-dom';
+
 
 export default class Login extends Component {
   constructor(props) {
