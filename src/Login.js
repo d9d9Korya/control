@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import View from './View';
 import Router from './index';
 import { Switch, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { browserHistory }  from 'react-router';
+//import { browserHistory }  from 'react-router';
 import { Link } from 'react-router-dom'
 import './index.css';
+import View from './View';
 
 
 export default class Login extends Component {
@@ -22,21 +22,26 @@ export default class Login extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  add = (e)=>{
+    e.preventDefault();
+  window.location.assign('./view');
+  }
   handleChange(event) {
     this.setState({
       [event.target.name]: event.target.value
     });
   }
+    
 
   handleSubmit(event) {
-  
+  //browserHistory.push(`/${view}`);
   }
 
   render() {
     return (
       <class loginForm>
         
-         <Link to="/view" >View</Link>
+         {/* <p4><Link to="/view" >View</Link></p4> */}
         <p1 class="header">Login</p1>
         <form onSubmit={this.handleSubmit}>
        
@@ -58,7 +63,7 @@ export default class Login extends Component {
             required
           />
       
-          <button type="submit" class="Btn">Login</button>
+          <button onClick={this.add}  type="submit" class="Btn">Login</button>
         </form>
       </class>
     );
