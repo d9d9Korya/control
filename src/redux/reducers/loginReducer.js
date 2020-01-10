@@ -1,4 +1,4 @@
-export const UPDATE_NEW_LOGIN_TEXT = "UPDATE-NEW-LOGIN-TEXT";
+export const UPDATE_INFO = "UPDATE_INFO";
 
 let initialState = {
   name: "",
@@ -7,21 +7,21 @@ let initialState = {
 
 const loginReducer = (state = initialState, action) => {
   switch (action.type) {
-    case UPDATE_NEW_LOGIN_TEXT:
+    case UPDATE_INFO:
       return {
         ...state,
-        name: action.nameNewText,
-        password: action.passNewText1
+        name: action.nameupdate,
+        password: action.passupdate
       };
 
     default:
       return state;
   }
 };
-export const updateNewLoginTextActionCreator = (nameText, passText) => ({
-  type: UPDATE_NEW_LOGIN_TEXT,
-  nameNewText: nameText,
-  passNewText1: passText
+export const updateLoginInfoActionCreator = (nameText, passText) => ({
+  type: UPDATE_INFO,
+  nameUpdateInfo: nameText,
+  passUpdateInfo: passText
 });
 
 export default loginReducer;

@@ -1,9 +1,14 @@
-import {combineReducers } from 'redux';
+import {
+     combineReducers
+} from 'redux';
 import usersReducers from "../reducers/usersReducer.js";
-import {createStore} from 'redux';
+import {
+     createStore
+} from 'redux';
 
-let store = createStore(Reducer);
-let Reducer = combineReducers({
+let reducer = combineReducers({
      usersReducers
 });
+let store = createStore(reducer);
+
 export default store;

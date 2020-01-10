@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { Route } from "react-router";
 import Login from './Login';
 import View from './View';
 import './index.css';
-import { Switch, Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 import store from "./redux/store/store.js";
 import {Provider} from 'react-redux';
 
