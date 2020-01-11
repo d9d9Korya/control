@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Table from './Table';
 import Form from './Form';
-import './index.css';
+import '../../index.css';
 import { Link } from 'react-router-dom'
 
 

@@ -19,7 +19,7 @@ let mapStateToProps = (state) => {
     };
 }
 let mapDispatchToProps = (dispatch) => {
-    return {
+    return {    
         DeleteUser: id => {
             dispatch(DelUserActionCreator(id));
         },

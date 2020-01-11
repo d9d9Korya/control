@@ -1,7 +1,7 @@
 import {  ADD_USER , DEL_USER ,UPDATE_INFO  } from "../actions/actions";
 let initialState = {usersData: [{id:1,firstname:"Korney",lastname:"Novikov",email:"kn@gmail.com"},
                                 {id:2,firstname:"Alyosha",lastname: "Rus",email:"AleshaRus123@gmail.com"},
-                                {id:3,firstname: "Dmitiy",lastname:"Antonov",email:"JohnSilver@gmail.com"} ],
+                                {id:3,firstname: "Dmitriy",lastname:"Antonov",email:"JohnSilver@gmail.com"} ],
                                 fnameinput:"", lnameinput:"",emailinput:""};
 
 
@@ -23,9 +23,9 @@ var usersReducer = (state = initialState, action) => {
       case UPDATE_INFO:
         return {
           ...state,
-          newText: action.fnameinput,
-          newText1: action.lnameinput,
-          newText2: action.emailinput
+          firstname: action.fnameinput,
+          lastname: action.lnameinput,
+          email: action.emailinput
         };
     default:
       return state;

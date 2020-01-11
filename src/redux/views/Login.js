@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Router from './index';
+import Router from '../../index';
 import { Switch, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 //import { browserHistory }  from 'react-router';
 import { Link } from 'react-router-dom'
-import './index.css';
+import '../../index.css';
 import View from './View';
 
 
